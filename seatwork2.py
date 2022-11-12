@@ -8,11 +8,11 @@ print ("‿︵‿︵  ୨˚̣̣̣͙୧ ୨˚̣̣̣͙୧ - - ୨˚̣̣̣͙୧ ୨
 
 #Dictionary
 dict = {
-        "Full Name:" : {},
-        "Age:" : {},
-        "Address:" : {},
-        "Contact Number:" : {},
-        "Information:" : {}
+        "Full Name" : {},
+        "Age" : {},
+        "Address" : {},
+        "Contact Number" : {},
+        "Information" : {}
 }
 
 def get_input():
@@ -39,14 +39,23 @@ while True:
         print("Saved!")
             
             #Stored in Dictionary, dict
-        dict ["Full Name:"] = name
-        dict ["Age:"] = age
-        dict ["Address:"] = address
-        dict ["Contact Number:"] = number
-        dict ["Information:"] = info
-            
+        dict ["Full Name"] = name
+        dict ["Age"] = age
+        dict ["Address"] = address
+        dict ["Contact Number"] = number
+        dict ["Information"] = info
+     
+     #Option 2       
     elif user_input == "2":
+        print("What key do you want to search? ")    
+        key = input()    
+        if key in dict:
+            print (dict[key])
+        else:
+            print ("Not Available")
+        
             
+        
             
     
         
